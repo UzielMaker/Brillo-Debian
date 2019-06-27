@@ -41,3 +41,5 @@ update-grub
 7- Una vez actualizado el grub reiniciamos `reboot`
 
 Una vez iniciado el sistema deberian funcionar las teclas sin problemas.
+
+Esta solucion se realizo en Debian 9 con entorno GNOME y Cinnamon.
