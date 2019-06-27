@@ -20,5 +20,12 @@ EndSection
 4- Si no reaccionan los botones editamos el archivo grub
 ```nano /etc/default/grub```
 
-5- En la linea `GRUB_CMDLINE_LINUX_DEFAULT="quiet"`
-debe quedar `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=native pcie_aspm=force acpi_osi="`
+5- En la linea que dice
+`GRUB_CMDLINE_LINUX_DEFAULT="quiet"`
+debe quedar asi
+`GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=native pcie_aspm=force acpi_osi="`
+
+6- Guardar y salir `Ctrl+X`, y actualizamos el archivo grub
+``update-grub``
+
+7- Una vez actualizado el grub reiniciamos `reboot`
