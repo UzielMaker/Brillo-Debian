@@ -15,4 +15,10 @@ Section "Device"
              BusID "PCI:0:2:0"
 EndSection
 ```
-3- Guardamos y reiniciamos el sistema
+3- Guardar y salir `Ctrl+X`, y reiniciar `reboot`.
+
+4- Si no reaccionan los botones editamos el archivo grub
+```nano /etc/default/grub```
+
+5- En la linea `GRUB_CMDLINE_LINUX_DEFAULT="quiet"`
+debe quedar `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=native pcie_aspm=force acpi_osi="`
